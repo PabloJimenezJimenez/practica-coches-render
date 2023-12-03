@@ -1,0 +1,19 @@
+<header>
+    <figure class="logo">
+        <img src="https://dummyimage.com/120x120/ff6b6b/000000.png" alt=""/>
+    </figure>
+    <nav class="menu-header">
+        <a routerLink="home">HOME</a>
+        <a routerLink="modelo">MODELO</a>
+        <a routerLink="modelo">RENTING</a>
+    </nav>
+    <button (click)="flag()" class="menuMovil btn">Menú</button>
+    <section class="menuMovil">
+        <nav class="menu" [ngClass]="{'opacity-1':flagAnimacion, 'opacity-0':!flagAnimacion, 'hidden':!flagAnimacion}">
+            <section class="cerrarMenu" (click)="flag()"><button class="btn">X</button></section>
+            <a routerLink="home" (click)="flag()">Home</a>
+            <a routerLink="modelo" (click)="flag()">Modelo</a>
+            <a routerLink="modelo" (click)="flag()">Renting</a>
+        </nav>
+    </section>
+</header>

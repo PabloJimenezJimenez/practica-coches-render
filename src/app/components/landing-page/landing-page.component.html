@@ -1,0 +1,9 @@
+<main>
+    <section class="coche" *ngFor="let modelo of modelosTesla" id={{modelo.substring(modelo.length-1)}}>
+        <h1 class="nombreModelo">{{modelo}}</h1>
+        <section class="botones">
+            <button class="botonPedido">Pedido personalizado</button>
+            <button class="botonPrueba">Prueba de condución</button>
+        </section>
+    </section>
+</main>
